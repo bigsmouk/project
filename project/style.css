@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", serif;
+}
+
+.hero_block {
+	background: #D4D4D4; 
+	width: 100%;
+	height: auto;
+	padding: 129px 0 129px 192px;
+}
+
+.contain {
+	display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    column-gap: 60px;
+    position: relative;
+}
+
+.card {
+	width: 339px;
+	height: 234px;
+	padding: 15px 0 0 25px;
+	position: relative;
+	z-index: 1;
+	border-radius: 25px;
+	-webkit-transition: 0.2s ease;
+}
+
+.card:hover {
+	background: #FFFFFF;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+}
+
+.shadow_defolt {
+	backdrop-filter: blur(30px);
+	box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+}
+
+.shadow_pink {
+	backdrop-filter: blur(30px);
+	box-shadow: 0px 0px 30px 0px rgb(255, 47, 84);
+}
+
+
+.overlay {
+	top: 0;
+ 	left: 0;
+  	z-index: 0;
+  	width: 100%;
+  	height: 100%;
+  	opacity: 0.1;
+  	background-color: #FFFFFF03;
+  	position: absolute;
+  	border-radius: 25px;
+  	  	backdrop-filter: blur(45px);
+  	 -webkit-backdrop-filter: blur(45px);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 289px;
+}
+
+.card_title {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 38.73px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 249px;
+}
+
+.card_text {
+	font-size: 12px;
+	line-height: 14.52px;
+	font-weight: 400;
+}
+
+.rectangle {
+	position: absolute;
+	width: 934.81px;
+	height: 300px;
+	background-color: #7075F1;
+	border-radius: 300px;
+	transform: rotate(30deg);
+	top: 208px;
+    left: 297px;
+}
